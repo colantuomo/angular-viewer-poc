@@ -1,0 +1,48 @@
+.side-menu {
+  position: relative;
+  top: 50%;
+  right: 5rem;
+  background-color: #ff7200;
+  width: 4rem;
+  height: 5rem;
+  border-radius: 1rem 0 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.side-notes {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff7200;
+  height: 100vh;
+  width: 15rem;
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.5s ease-out;
+  // 0 pra 17rem;
+  transform: translateX(17rem);
+  // display: none;
+}
+
+.card {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  p {
+    padding: 1rem;
+  }
+  &-bottom {
+    border-top: 1px dotted gray;
+    padding: 0.5rem;
+    color: gray;
+    font-size: 0.9rem;
+  }
+}
